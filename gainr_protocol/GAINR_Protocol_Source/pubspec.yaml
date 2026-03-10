@@ -1,0 +1,11 @@
+name: gainr_protocol
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+workspace:
+  - apps/back_bet
+  - apps/price_bet
+  - apps/pick_bet
+  - packages/gainr_ui
+  - packages/gainr_solana
+  - packages/gainr_api
+  - packages/gainr_models

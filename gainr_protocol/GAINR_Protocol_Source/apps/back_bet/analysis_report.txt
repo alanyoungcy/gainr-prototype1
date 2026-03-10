@@ -1,0 +1,102 @@
+Analyzing frontend...                                           
+
+  error - Classes can only extend other classes - lib\features\betting\providers\bet_slip_provider.dart:8:33 - extends_non_class
+warning - The method doesn't override an inherited method - lib\features\betting\providers\bet_slip_provider.dart:10:13 - override_on_non_overriding_member
+  error - Undefined name 'state' - lib\features\betting\providers\bet_slip_provider.dart:15:9 - undefined_identifier
+  error - Undefined name 'state' - lib\features\betting\providers\bet_slip_provider.dart:17:7 - undefined_identifier
+  error - Undefined name 'state' - lib\features\betting\providers\bet_slip_provider.dart:17:15 - undefined_identifier
+  error - Undefined name 'state' - lib\features\betting\providers\bet_slip_provider.dart:29:5 - undefined_identifier
+  error - Undefined name 'state' - lib\features\betting\providers\bet_slip_provider.dart:29:17 - undefined_identifier
+  error - Undefined name 'state' - lib\features\betting\providers\bet_slip_provider.dart:33:5 - undefined_identifier
+  error - Undefined name 'state' - lib\features\betting\providers\bet_slip_provider.dart:33:13 - undefined_identifier
+  error - Undefined name 'state' - lib\features\betting\providers\bet_slip_provider.dart:37:5 - undefined_identifier
+  error - Undefined name 'state' - lib\features\betting\providers\bet_slip_provider.dart:37:13 - undefined_identifier
+  error - Undefined name 'state' - lib\features\betting\providers\bet_slip_provider.dart:46:5 - undefined_identifier
+  error - The method 'watch' isn't defined for the type 'EventsRef' - lib\features\betting\providers\event_provider.dart:11:27 - undefined_method
+  error - Classes can only extend other classes - lib\features\betting\providers\event_provider.dart:24:29 - extends_non_class
+warning - The method doesn't override an inherited method - lib\features\betting\providers\event_provider.dart:26:10 - override_on_non_overriding_member
+  error - Undefined name 'state' - lib\features\betting\providers\event_provider.dart:28:34 - undefined_identifier
+  error - Classes can only extend other classes - lib\features\betting\providers\event_provider.dart:32:27 - extends_non_class
+warning - The method doesn't override an inherited method - lib\features\betting\providers\event_provider.dart:34:10 - override_on_non_overriding_member
+  error - Undefined name 'state' - lib\features\betting\providers\event_provider.dart:36:34 - undefined_identifier
+  error - The function 'StateNotifierProvider' isn't defined - lib\features\betting\providers\placed_bets_provider.dart:110:5 - undefined_function
+  error - Classes can only extend other classes - lib\features\betting\providers\placed_bets_provider.dart:126:34 - extends_non_class
+  error - Too many positional arguments: 0 expected, but 1 found - lib\features\betting\providers\placed_bets_provider.dart:131:41 - extra_positional_arguments
+  error - Undefined name 'state' - lib\features\betting\providers\placed_bets_provider.dart:145:9 - undefined_identifier
+  error - Undefined name 'state' - lib\features\betting\providers\placed_bets_provider.dart:161:31 - undefined_identifier
+  error - Undefined name 'state' - lib\features\betting\providers\placed_bets_provider.dart:183:5 - undefined_identifier
+  error - Undefined name 'state' - lib\features\betting\providers\placed_bets_provider.dart:183:28 - undefined_identifier
+  error - Undefined name 'state' - lib\features\betting\providers\placed_bets_provider.dart:210:22 - undefined_identifier
+  error - Undefined name 'state' - lib\features\betting\providers\placed_bets_provider.dart:213:17 - undefined_identifier
+  error - Undefined name 'state' - lib\features\betting\providers\placed_bets_provider.dart:225:43 - undefined_identifier
+  error - Undefined name 'state' - lib\features\betting\providers\placed_bets_provider.dart:227:5 - undefined_identifier
+  error - Undefined name 'state' - lib\features\betting\providers\placed_bets_provider.dart:246:5 - undefined_identifier
+warning - The method doesn't override an inherited method - lib\features\betting\providers\placed_bets_provider.dart:251:8 - override_on_non_overriding_member
+  error - The method 'dispose' isn't defined in a superclass of 'PlacedBetsNotifier' - lib\features\betting\providers\placed_bets_provider.dart:256:11 - undefined_super_member
+  error - The function 'StateNotifierProvider' isn't defined - lib\features\betting\providers\social_win_provider.dart:20:5 - undefined_function
+  error - Classes can only extend other classes - lib\features\betting\providers\social_win_provider.dart:24:33 - extends_non_class
+  error - Too many positional arguments: 0 expected, but 1 found - lib\features\betting\providers\social_win_provider.dart:25:31 - extra_positional_arguments
+  error - Undefined name 'state' - lib\features\betting\providers\social_win_provider.dart:59:5 - undefined_identifier
+  error - Undefined name 'state' - lib\features\betting\providers\social_win_provider.dart:68:7 - undefined_identifier
+warning - The method doesn't override an inherited method - lib\features\betting\providers\social_win_provider.dart:73:8 - override_on_non_overriding_member
+  error - The method 'dispose' isn't defined in a superclass of 'SocialWinNotifier' - lib\features\betting\providers\social_win_provider.dart:75:11 - undefined_super_member
+  error - The argument type 'EventsProvider' can't be assigned to the parameter type 'ProviderListenable<dynamic>'.  - lib\features\betting\widgets\event_list.dart:14:35 - argument_type_not_assignable
+  error - The property 'isEmpty' can't be unconditionally accessed because the receiver can be 'null' - lib\features\betting\widgets\event_list.dart:19:20 - unchecked_use_of_nullable_value
+  error - The property 'length' can't be unconditionally accessed because the receiver can be 'null' - lib\features\betting\widgets\event_list.dart:24:29 - unchecked_use_of_nullable_value
+  error - The method '[]' can't be unconditionally invoked because the receiver can be 'null' - lib\features\betting\widgets\event_list.dart:26:43 - unchecked_use_of_nullable_value
+  error - The function 'StateProvider' isn't defined - lib\features\home\main_layout.dart:16:32 - undefined_function
+  error - The argument type 'EventsProvider' can't be assigned to the parameter type 'ProviderListenable<dynamic>'.  - lib\features\home\widgets\main_content.dart:45:35 - argument_type_not_assignable
+  error - The method 'where' can't be unconditionally invoked because the receiver can be 'null' - lib\features\home\widgets\main_content.dart:127:41 - unchecked_use_of_nullable_value
+  error - The method 'where' can't be unconditionally invoked because the receiver can be 'null' - lib\features\home\widgets\main_content.dart:128:45 - unchecked_use_of_nullable_value
+  error - The property 'isNotEmpty' can't be unconditionally accessed because the receiver can be 'null' - lib\features\home\widgets\main_content.dart:140:38 - unchecked_use_of_nullable_value
+  error - The property 'first' can't be unconditionally accessed because the receiver can be 'null' - lib\features\home\widgets\main_content.dart:143:58 - unchecked_use_of_nullable_value
+  error - The property 'isEmpty' can't be unconditionally accessed because the receiver can be 'null' - lib\features\home\widgets\main_content.dart:144:38 - unchecked_use_of_nullable_value
+  error - Classes can only extend other classes - lib\features\wallet\providers\wallet_provider.dart:9:30 - extends_non_class
+  error - Too many positional arguments: 0 expected, but 1 found - lib\features\wallet\providers\wallet_provider.dart:10:28 - extra_positional_arguments
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:21:9 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:32:31 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:56:5 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:56:13 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:57:38 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:63:5 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:63:13 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:76:7 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:76:15 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:91:7 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:91:15 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:100:5 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:107:10 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:107:31 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:113:7 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:113:15 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:114:22 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:115:21 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:128:10 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:128:31 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:130:5 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:130:13 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:131:19 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:141:10 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:143:5 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:143:13 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:144:19 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:185:10 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:190:22 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:191:21 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:192:23 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:199:5 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:199:13 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:222:7 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:222:15 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:237:7 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:237:15 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:257:10 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:257:31 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:263:7 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:263:15 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:264:21 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:265:22 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:278:5 - undefined_identifier
+  error - Undefined name 'state' - lib\features\wallet\providers\wallet_provider.dart:278:13 - undefined_identifier
+  error - The function 'StateNotifierProvider' isn't defined - lib\features\wallet\providers\wallet_provider.dart:285:5 - undefined_function
+

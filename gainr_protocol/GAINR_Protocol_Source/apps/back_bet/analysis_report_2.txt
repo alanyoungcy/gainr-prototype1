@@ -1,0 +1,5 @@
+Analyzing frontend...                                           
+
+  error - Undefined class 'EventsRef' - lib\features\betting\providers\event_provider.dart:8:28 - undefined_class
+  error - The function 'StateProvider' isn't defined - lib\features\home\main_layout.dart:16:32 - undefined_function
+

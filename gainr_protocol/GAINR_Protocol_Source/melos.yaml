@@ -1,0 +1,26 @@
+name: gainr_protocol
+
+packages:
+  - "apps/*"
+  - "packages/*"
+
+scripts:
+  analyze:
+    run: melos exec -- "dart analyze"
+    description: Run dart analyze across all packages.
+  
+  test:
+    run: melos exec -- "flutter test"
+    description: Run tests across all packages.
+  
+  format:
+    run: melos exec -- "dart format ."
+    description: Format dart code across all packages.
+
+  build_back:
+    run: cd apps/back_bet && flutter build web
+    description: Build back_bet for web
+
+  build_price:
+    run: cd apps/price_bet && flutter build web
+    description: Build price_bet for web

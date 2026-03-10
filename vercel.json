@@ -1,0 +1,6 @@
+{
+  "framework": null,
+  "buildCommand": "bash ./price_bet/scripts/vercel_build.sh",
+  "outputDirectory": "price_bet/build/web"
+}
+

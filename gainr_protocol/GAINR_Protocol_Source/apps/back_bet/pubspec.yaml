@@ -1,0 +1,49 @@
+name: gainr_mobile
+description: GAINR decentralized sports betting mobile app.
+publish_to: "none"
+version: 1.0.0+1
+resolution: workspace
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Assets
+  google_fonts: ^8.0.1
+  flutter_lucide: ^1.8.2
+  intl: ^0.20.2
+
+  # State Management & Routing
+  flutter_riverpod: ^3.1.0
+  riverpod_annotation: ^4.0.0
+  go_router: ^17.1.0
+
+  # Shared GAINR Packages
+  gainr_ui:
+    path: ../../packages/gainr_ui
+  gainr_solana:
+    path: ../../packages/gainr_solana
+  gainr_api:
+    path: ../../packages/gainr_api
+  gainr_models:
+    path: ../../packages/gainr_models
+
+  # Solana & Networking
+  solana: ^0.32.0
+  http: ^1.2.0
+
+  # Utility
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.4.8
+  riverpod_generator: ^4.0.0+1
+
+flutter:
+  uses-material-design: true

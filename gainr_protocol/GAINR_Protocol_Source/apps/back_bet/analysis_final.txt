@@ -1,0 +1,4 @@
+Analyzing frontend...                                           
+
+   info - The member 'state' overrides an inherited member but isn't annotated with '@override' - lib\features\home\main_layout.dart:23:7 - annotate_overrides
+
