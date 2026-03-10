@@ -21,9 +21,12 @@ fi
 
 export PATH="$FLUTTER_SDK_DIR/flutter/bin:$PATH"
 
+# Vercel runs builds as root; Flutter uses git inside its SDK and git will refuse
+# to operate in repos with "dubious ownership" unless marked safe.
+git config --global --add safe.directory "$FLUTTER_SDK_DIR/flutter" || true
+
 cd "$APP_DIR"
 flutter --version
 flutter config --enable-web
 flutter pub get
 flutter build web --release
-
