@@ -27,7 +27,7 @@ class PriceApiClient {
       PriceMarket(
         id: 'epl_burnley_bournemouth_away',
         asset: 'Bournemouth',
-        currentPrice: 52.00,
+        currentPrice: 51.00,
         priceChange24h: -0.7,
         expiry: now.add(const Duration(hours: 48)),
         totalStaked: 2200000.0,
@@ -167,7 +167,7 @@ class PriceApiClient {
       PriceMarket(
         id: 'epl_manutd_astonvilla_home',
         asset: 'Man Utd',
-        currentPrice: 54.00,
+        currentPrice: 53.00,
         priceChange24h: 2.5,
         expiry: now.add(const Duration(hours: 54)),
         totalStaked: 4200000.0,
@@ -245,7 +245,7 @@ class PriceApiClient {
       PriceMarket(
         id: 'epl_brentford_wolverhampton_home',
         asset: 'Brentford',
-        currentPrice: 61.00,
+        currentPrice: 60.00,
         priceChange24h: 2.2,
         expiry: now.add(const Duration(hours: 57)),
         totalStaked: 2800000.0,
@@ -270,22 +270,51 @@ class PriceApiClient {
   }
 
   Stream<double> getPriceStream(String asset) async* {
-    double price = asset.contains('ELECTION')
-        ? 52.40
-        : asset.contains('LABOUR')
-            ? 85.20
-            : asset.contains('CEASEFIRE')
-                ? 12.40
-                : asset.contains('BTC')
-                    ? 71.40
-                    : 65.10;
+    // Anchor sports markets to their static probabilities so dashboard
+    // percentages match the configured odds. Non-sports macro markets use a
+    // simple random-walk simulation.
+
+    late double price;
+    var fromMarket = false;
+
+    try {
+      final markets = await getMarkets();
+      final matching =
+          markets.where((m) => m.asset.toUpperCase() == asset.toUpperCase());
+      if (matching.isNotEmpty) {
+        price = matching.first.currentPrice;
+        fromMarket = true;
+      }
+    } catch (_) {
+      // Fall back to synthetic behaviour below if anything goes wrong.
+    }
+
+    if (!fromMarket) {
+      price = asset.contains('ELECTION')
+          ? 52.40
+          : asset.contains('LABOUR')
+              ? 85.20
+              : asset.contains('CEASEFIRE')
+                  ? 12.40
+                  : asset.contains('BTC')
+                      ? 71.40
+                      : 65.10;
+    }
+
     while (true) {
       await Future.delayed(const Duration(seconds: 2));
-      final change = (Random().nextDouble() - 0.5) * 2;
-      price += change;
-      if (price < 0) price = 0;
-      if (price > 100) price = 100;
-      yield price;
+
+      if (fromMarket) {
+        // Keep EPL-style prediction markets stable.
+        yield price;
+      } else {
+        // Synthetic random walk for macro/asset markets.
+        final change = (Random().nextDouble() - 0.5) * 2;
+        price += change;
+        if (price < 0) price = 0;
+        if (price > 100) price = 100;
+        yield price;
+      }
     }
   }
 }

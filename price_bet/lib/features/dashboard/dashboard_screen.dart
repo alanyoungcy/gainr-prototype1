@@ -470,8 +470,6 @@ class _OutcomeRow extends ConsumerWidget {
       error: (_, __) => market.currentPrice,
     );
     
-    // Calc odds: 100 / price -> e.g. 100/20 = 5.0x
-    final odds = livePrice > 0 ? (100 / livePrice) : 0.0;
     final probability = livePrice.toInt().clamp(1, 99);
 
     return InkWell(
@@ -543,18 +541,6 @@ class _OutcomeRow extends ConsumerWidget {
                 ],
               ),
             ),
-            const SizedBox(width: 16),
-            
-            // Odds
-            Expanded(
-              flex: 2,
-              child: Text('${odds.toStringAsFixed(2)}x', 
-                style: const TextStyle(color: Colors.white54, fontSize: 13, fontFamily: 'monospace'),
-                textAlign: TextAlign.right,
-              ),
-            ),
-            const SizedBox(width: 16),
-
             // Probability Button
             Expanded(
               flex: 2,
